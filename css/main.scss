@@ -17,6 +17,21 @@ body {
   }
 }
 
+.btn-lg {
+  font-size: 30px;
+}
+
+.btn-danger {
+  border: 0px;
+  background-color: $red !important;
+  &.transparent {
+    background-color: rgba(237, 50, 55, 0.67) !important;
+    &:hover {
+      background-color: $red !important;
+    }
+  }
+}
+
 section#banda {
   background-position: 50% 50%;
   background-attachment: fixed;
@@ -46,7 +61,6 @@ section#musica {
     }
   }
 }
-
 
 .thumbnail {
   &.integrante {
