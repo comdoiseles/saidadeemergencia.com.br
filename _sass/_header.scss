@@ -1,0 +1,32 @@
+header {
+  .navbar {
+    border: 0px;
+    padding: 10px;
+    .container {
+      text-align: center;
+      .navbar-nav {
+        display: inline-block;
+        float: none;
+        li {
+          a {
+            color: $white;
+            font-size: 24px;
+            letter-spacing: 1px;
+            transition: color 0.1s ease;
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+      .navbar-brand {
+        text-align: center;
+        margin-left: 0px;
+        img {
+          width: 274px;
+          margin-top: -15px;
+        }
+      }
+    }
+  }
+}

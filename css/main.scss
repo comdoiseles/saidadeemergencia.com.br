@@ -1,0 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import "fonts";
+@import "variables";
+@import "helpers";
+@import "header";
+body {
+  font-family: Tungsten, sans-serif;
+  background-color: $black;
+}
+
+@media(min-width: 992px) {
+  .container {
+    width: 870px !important;
+  }
+}
+
+section#banda {
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/background_led.jpg");
+}
+
+section#test {
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/background_banda.jpg");
+}
+
+section#musica {
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/background_musica.jpg");
+  .album-detalhes {
+    h1 {
+      color: $red;
+    }
+    p {
+      color: $red;
+      font-size: 20px;
+    }
+  }
+}
+
+
+.thumbnail {
+  &.integrante {
+    width: 180px;
+    height: 252px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    .caption {
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      background-color: $blue-transparent;
+    }
+  }
+}
