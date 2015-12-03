@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="180">
+  {% include header.html %}
+  <div class="page-content">
+    <div class="wrapper">
+      {{ content }}
     </div>
+  </div>
+  {% include footer.html %}
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.carousel').carousel({
 
-    {% include footer.html %}
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        new WOW().init();   
-      });
-    </script>
-  </body>
+    });
+    new WOW().init();
+  });
+  </script>
+</body>
 
 </html>

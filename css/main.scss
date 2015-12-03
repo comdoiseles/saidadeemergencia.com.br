@@ -1,79 +1,95 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
----
+# main
+--- 
+
 @charset "utf-8";
 @import "fonts";
 @import "variables";
 @import "helpers";
 @import "header";
+@import "contato";
 body {
+  padding-top: 70px;
   font-family: Tungsten, sans-serif;
   background-color: $black;
 }
 
-@media(min-width: 992px) {
+@media(min-width: 768px) {
   .container {
     width: 870px !important;
   }
 }
 
-.btn-lg {
-  font-size: 30px;
-}
-
 .btn-danger {
   border: 0px;
-  background-color: $red !important;
-  &.transparent {
-    background-color: rgba(237, 50, 55, 0.67) !important;
-    &:hover {
-      background-color: $red !important;
+  background-color: $red-transparent !important;
+  &:hover {
+    background-color: $red !important;
+  }
+}
+
+.label-danger {
+  background-color: $red-transparent !important;
+}
+
+section#banner {
+  .btn-lg {
+    font-size: 30px;
+  }
+}
+
+section#musica {
+  .album-capa {
+    img {
+      width: 100%;
+    }
+  }
+  .album-detalhes {
+    p {
+      font-family: Tungsten-Light, sans-serif;
+      font-size: 20px;
+    }
+  }
+  .album-acoes {
+    margin-bottom: 5px;
+    .btn-lg {
+      padding: 10px;
+      font-size: 17px;
     }
   }
 }
 
 section#banda {
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("../images/background_led.jpg");
-}
-
-section#test {
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("../images/background_banda.jpg");
-}
-
-section#musica {
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("../images/background_musica.jpg");
-  .album-detalhes {
-    h1 {
-      color: $red;
-    }
-    p {
-      color: $red;
-      font-size: 20px;
+  .thumbnail {
+    &.integrante {
+      width: 180px;
+      height: 252px;
+      padding: 0px;
+      border: 0px;
+      position: relative;
+      .caption {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        background-color: $blue-transparent;
+      }
     }
   }
 }
 
-.thumbnail {
-  &.integrante {
-    width: 180px;
-    height: 252px;
-    padding: 0px;
-    border: 0px;
-    position: relative;
-    .caption {
-      bottom: 0;
-      width: 100%;
-      position: absolute;
-      background-color: $blue-transparent;
-    }
+section#contato {
+  .form-control {
+    font-family: Tungsten-Light, sans-serif;
+    background-color: $black !important;
+    color: $white !important;
+    border: 1px solid #282828;
+    font-size: 20px;
+  }
+  .btn-enviar {
+    background-color: $red-transparent !important;
+    border: 2px solid $black;
+    color: $black;
+    font-size: 24px;
+    padding: 4px 33px;
   }
 }

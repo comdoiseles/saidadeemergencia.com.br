@@ -1,7 +1,30 @@
+// *******************
+// *** BACKGROUNDS ***
+// *******************
 .black {
   background-color: $black !important;
 }
 
+.blue {
+  background-color: $blue !important;
+}
+
+.blue-transparent {
+  background-color: $blue-transparent !important;
+}
+
+.red {
+  background-color: $red !important;
+}
+
+.red-transparent {
+  background-color: $red-transparent !important;
+}
+
+
+// *******************
+// *** TEXT COLORS ***
+// *******************
 .text-white {
   color: $white !important;
 }
@@ -10,10 +33,21 @@
   color: $red !important;
 }
 
+.text-black {
+  color: $black !important;
+}
+
+// *******************
+// * TEXT DECORATION *
+// *******************
 .underline {
   text-decoration: underline;
 }
 
+
+// *******************
+// ***** EFFECTS *****
+// *******************
 .grow {
   transition: all .2s ease-in-out;
   &:hover {
@@ -21,11 +55,12 @@
   }
 }
 
-.red {
-  background-color: $red !important;
-  
-  &.transparent {
-    background-color: rgba(237, 50, 55, 0.67) !important;
-  } 
+// *******************
+// **** ALIGNMENT ****
+// *******************
+.center {
+  text-align: center;
 }
+
+
 
