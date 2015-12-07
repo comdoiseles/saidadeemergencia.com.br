@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default 
 ---
 <section id="banner" class="wow fadeIn">
   <div class="container">
@@ -110,7 +110,9 @@ layout: default
 <section id="fotos">
   <div class="container">
     <h1 class="text-red">FOTOS</h1>
-   <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/dbcca162c88ec6ac53af77e5958e4bdc9e46900a.html" id="instansive_dbcca162c8" name="instansive_dbcca162c8"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+    <!-- INSTANSIVE WIDGET -->
+    <script src="//instansive.com/widget/js/instansive.js"></script>
+    <iframe src="//instansive.com/widgets/dbcca162c88ec6ac53af77e5958e4bdc9e46900a.html" id="instansive_dbcca162c8" name="instansive_dbcca162c8" scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
   </div>
 </section>
 <section id="noticias">
@@ -132,26 +134,31 @@ layout: default
 </section>
 <section id="contato" class="red-transparent">
   <div class="container">
-  <h1 class="text-black">CONTATO</h1>
+    <h1 class="text-black">CONTATO</h1>
     <div class="row">
-      <form>
+      <div class="col-xs-12">
+        <div id="alert" class="alert alert-danger" role="alert"></div>
+      </div>
+      <form id="contato-form">
         <div class="col-sm-6">
           <div class="form-group">
             <input type="text" class="form-control" name="nome" placeholder="Digite seu Nome" required>
           </div>
         </div>
-         <div class="col-sm-6">
+        <div class="col-sm-6">
           <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Digite seu Email" required>
           </div>
         </div>
-           <div class="col-sm-12">
+        <div class="col-sm-12">
           <div class="form-group">
             <textarea class="form-control" name="mensagem" cols="30" rows="4" placeholder="Digite a sua mensagem"></textarea>
           </div>
         </div>
         <div class="col-sm-12 center">
-        <button type="submit" class="btn btn-enviar">ENVIAR</button>  
+          <button id 1type="submit" data-loading-text="Enviando..." class="btn btn-enviar">
+           <span class="spinner"><i class="icon-refresh"></i> ENVIAR
+           </button>
         </div>
       </form>
     </div>
