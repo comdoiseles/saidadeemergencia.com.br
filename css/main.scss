@@ -105,3 +105,19 @@ section#contato {
     padding: 4px 33px;
   }
 }
+.post {
+  .post-meta {
+    time {
+      color: $white;
+      text-decoration: underline;
+      font-size: 21px;
+    }
+  }
+  .post-content {
+    p {
+      font-family: Tungsten-Light, sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+  }
+}

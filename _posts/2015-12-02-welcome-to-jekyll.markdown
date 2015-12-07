@@ -1,24 +1,9 @@
 ---
 layout: post
-title:  "BANDA APARECE NA TV" 
-data: "SEXTA-FEIRA, 30 DE NOVEMBRO DE 2015"
+title:  "“Tribuna do Paraná” prestigia lançamento da banda “Saída de Emergência”" 
+date: 2010-12-30 13:22:25
+categories: noticias
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+No último dia 28 de dezembro de 2010 o jornal **Tribuna do Paraná** publicou matéria sobre o lançamento do CD **O Importante é o Principal**, da banda **Saída de Emergência** em suas versões impressas, com uma tiragem diária de mais de 20 mil exemplares, e online. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[Acesse aqui a versão online](http://www.parana-online.com.br/colunistas/207/82741/) 

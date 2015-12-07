@@ -138,9 +138,9 @@ layout: default
     </header>
     <div class="row">
       <ul class="noticias">
-        {% for post in site.posts %}
+        {% for post in site.categories["noticias"] %}
         <li class="post">
-          <h3 class="text-white underline">{{ post.data }}</h3>
+          <h3 class="text-white underline">{{ post.date | localize: "%d de %B de %Y" }}</h3>
           <h1>
             <a class="text-white" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h1>
