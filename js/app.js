@@ -3,7 +3,7 @@
   $(document).ready(function() {
     new WOW().init();
     $('.carousel').carousel({});
-    $('a[href*=#]:not([href=#])').click(onClickLink);
+    $('a[href*=#]:not([href=#]):not(.carousel-control)').click(onClickLink);
     $('#contato-form').submit(onSubmitForm);
   });
 
