@@ -3,13 +3,13 @@
 {% include head.html %}
 
 <body data-spy="scroll" data-target=".navbar" data-offset="180">
-  {% include header.html %}
-  <div class="page-content">
-    <div class="wrapper">
+  <div id="wrapper">
+    {% include header.html %}
+    <main>
       {{ content }}
-    </div>
+    </main>
+    {% include footer.html %}
   </div>
-  {% include footer.html %}
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
