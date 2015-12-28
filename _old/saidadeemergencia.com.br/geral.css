@@ -1,0 +1,49 @@
+body {
+	background-image: url(fundo.gif);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	text-align: left;
+}
+#tudo {
+	width: 1140px;
+    margin:0 auto;         
+    padding: 10px;
+    text-align:left; /* "remédio" para o hack do IE */  
+}
+h2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #FFF;
+	font-size: 24px;
+}
+p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #FFF;
+}
+#texto {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+h3 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+}
+#contato {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: left;
+}
+#banda {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: normal;
+}
+a {
+	color: #FFF;
+}
