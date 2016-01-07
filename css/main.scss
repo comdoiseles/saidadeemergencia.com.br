@@ -6,6 +6,7 @@
 @import "variables";
 @import "helpers";
 @import "header";
+@import "tabs";
 @import "contato";
 
 html, body {
@@ -62,17 +63,21 @@ section {
   }
 }
 
+
+
 .label-danger {
   background-color: $red-transparent !important;
 }
 
 section#banner {
+  height: 85%;
   .btn-lg {
     font-size: 30px;
   }
 
   img {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -88,6 +93,14 @@ section#musica {
     p {
       font-family: Tungsten-Light, sans-serif;
       font-size: 20px;
+    }
+
+    #faixas {
+      li {
+        list-style: none;
+        font-size: 20px;
+        font-family: Tungsten-Light, sans-serif;
+      }
     }
   }
   .album-acoes {

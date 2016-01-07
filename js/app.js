@@ -3,8 +3,15 @@
   $(document).ready(function() {
     new WOW().init();
     $('.carousel').carousel({});
-    $('a[href*=#]:not([href=#]):not(.carousel-control)').click(onClickLink);
+    $('a[href*=#]:not([href=#]):not(.carousel-control):not(.nav-tabs li a)').click(onClickLink);
     $('#contato-form').submit(onSubmitForm);
+
+    $('.nav-tabs a').click(function(e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+
   });
 
   function onClickLink() {

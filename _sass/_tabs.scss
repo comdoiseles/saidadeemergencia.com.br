@@ -1,0 +1,25 @@
+.nav-tabs {
+  border-bottom: 1px solid $blue-transparent !important;
+  li {
+    a {
+      font-size: 19px;
+      color: $white;
+      &:hover {
+        color: $white !important;
+        background-color: $blue-transparent !important;
+        border: 1px solid $blue-transparent !important; 
+      }
+    }
+    &.active {
+      a {
+        color: $white !important;
+        background-color: $blue-transparent !important;
+        border: 1px solid $blue-transparent !important;
+      }
+    }
+  }
+}
+
+.tab-content {
+  margin: 10px 0px 10px 0px;
+}
