@@ -17,15 +17,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="{% if page.url == '/' %}#musica{% else %}#musica{% endif %}">MÚSICA</a></li>
-          <li><a href="{% if page.url == '/' %}#banda{% else %}#banda{% endif %}">BANDA</a></li>
-          <li><a href="{% if page.url == '/' %}#fotos{% else %}#fotos{% endif %}">FOTOS</a></li>
+          <li><a href="{% if page.url == '/' %}#musica{% else %}/#musica{% endif %}">MÚSICA</a></li>
+          <li><a href="{% if page.url == '/' %}#banda{% else %}/#banda{% endif %}">BANDA</a></li>
+          <li><a href="{% if page.url == '/' %}#fotos{% else %}/#fotos{% endif %}">FOTOS</a></li>
           <a class="navbar-brand hidden-xs" href="#">
             <img src="{{ "/images/logo.png" | prepend: site.baseurl }}" alt="">
           </a>
-          <li><a href="{% if page.url == '/' %}#shows{% else %}#shows{% endif %}">SHOWS</a></li>
-          <li><a href="{% if page.url == '/' %}#noticias{% else %}#noticias{% endif %}">NOTÍCIAS</a></li>
-          <li><a href="{% if page.url == '/' %}#contato{% else %}#contato{% endif %}">CONTATO</a></li>
+          <li><a href="{% if page.url == '/' %}#shows{% else %}/#shows{% endif %}">SHOWS</a></li>
+          <li><a href="{% if page.url == '/' %}#noticias{% else %}/#noticias{% endif %}">NOTÍCIAS</a></li>
+          <li><a href="{% if page.url == '/' %}#contato{% else %}/#contato{% endif %}">CONTATO</a></li>
         </ul>
       </div>
     </div>
