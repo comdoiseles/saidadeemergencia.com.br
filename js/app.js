@@ -11,6 +11,10 @@
       e.preventDefault()
       $(this).tab('show')
     })
+      
+    // Navbar
+    $(".navbar-nav li a").click(collapseNavbar);    
+
 
     // Sidebar
     $('#play-wrapper').click(openSidebar);
@@ -29,6 +33,10 @@
 
   function closeSidebar() {
     $("#wrapper").attr('class', 'toggled');
+  }
+
+  function collapseNavbar() {
+    $(".navbar-collapse").collapse('hide');
   }
 
   function onClickLink() {
