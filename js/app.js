@@ -6,13 +6,30 @@
     $('a[href*=#]:not([href=#]):not(.carousel-control):not(.nav-tabs li a)').click(onClickLink);
     $('#contato-form').submit(onSubmitForm);
 
+    // Active tabs
     $('.nav-tabs a').click(function(e) {
       e.preventDefault()
       $(this).tab('show')
     })
 
+    // Sidebar
+    $('#play-wrapper').click(openSidebar);
+    $('#page').mouseover(closeSidebar);
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) {
+        closeSidebar();
+      }
+    });
 
   });
+
+  function openSideBar(){
+    $("#wrapper").toggleClass("toggled");
+  }
+
+  function closeSidebar() {
+    $("#wrapper").attr('class', 'toggled');
+  }
 
   function onClickLink() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
