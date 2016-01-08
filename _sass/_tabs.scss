@@ -1,13 +1,15 @@
 .nav-tabs {
   border-bottom: 1px solid $blue-transparent !important;
   li {
+    width: 50%;
     a {
-      font-size: 19px;
+      font-size: 26px;
       color: $white;
+      font-family: Tungsten-Light, sans-serif;
       &:hover {
         color: $white !important;
         background-color: $blue-transparent !important;
-        border: 1px solid $blue-transparent !important; 
+        border: 1px solid $blue-transparent !important;
       }
     }
     &.active {
