@@ -23,7 +23,7 @@
 
   });
 
-  function openSideBar(){
+  function openSidebar(){
     $("#wrapper").toggleClass("toggled");
   }
 
