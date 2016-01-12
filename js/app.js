@@ -1,3 +1,10 @@
+---
+---
+
+{% include_relative jquery-2.1.4.min.js %}
+{% include_relative bootstrap.min.js %}
+{% include_relative wow.min.js %}
+
 (function() {
   'use strict';
   $(document).ready(function() {

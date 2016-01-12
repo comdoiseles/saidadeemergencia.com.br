@@ -1,6 +1,10 @@
 ---
 # main 
 --- 
+
+{% include_relative bootstrap.min.css %}
+{% include_relative animate.min.css %}
+
 @charset "utf-8";
 @import "fonts";
 @import "variables";
