@@ -3,19 +3,17 @@
   padding: 10px;
   .container {
     text-align: center;
-
     .navbar-collapse {
       border: 0px;
     }
-
     .navbar-header {
       .navbar-toggle {
         border: 2px solid $red !important;
         .icon-bar {
           background-color: $red !important;
         }
-
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           background-color: $red !important;
           .icon-bar {
             background-color: $white !important;
@@ -23,7 +21,6 @@
         }
       }
     }
-
     .navbar-nav {
       display: inline-block;
       float: none;
@@ -51,8 +48,12 @@
       text-align: center;
       margin-left: 0px;
       img {
-        width: 274px;
-        margin-top: -15px;
+        @media(min-width: 768px) {
+          width: 274px;
+          margin-top: -15px;
+        }
+        width: 226px;
+        margin-top: -9px;
       }
     }
   }

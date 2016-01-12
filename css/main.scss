@@ -114,6 +114,7 @@ section#musica {
   .album-capa {
     img {
       width: 100%;
+      max-width: 405px;
     }
   }
   .album-detalhes {
@@ -142,16 +143,24 @@ section#musica {
 section#banda {
   .thumbnail {
     &.integrante {
-      width: 180px;
+      width: 100%;
       height: 252px;
       padding: 0px;
       border: 0px;
       position: relative;
+      background-size: 100%;
+
+   
+      @media(min-width: 768px) {
+        width: 180px;
+      }
+
       .caption {
         bottom: 0;
         width: 100%;
         position: absolute;
         background-color: $blue-transparent;
+        font-size: 19px;
       }
     }
   }
