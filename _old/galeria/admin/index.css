@@ -1,0 +1,54 @@
+a {
+	color:#003366;
+	text-decoration:none;
+}
+
+body {
+	margin-top: 11px;
+	color:#003366;
+}
+
+.boxAcess {
+	width: 270px;
+	float: left;
+	background-color: #FFFFFF;
+	padding-top: 50px;
+}
+
+.boxText {
+	font-size:16px;
+	color:#006699;
+	text-align:center;
+	font-weight:bold;
+	width: 280px;
+	float: left;
+	background-color: #FFFFFF;
+	padding-top:70px;
+}
+
+.boxLogo {
+	float: left;
+	background-color: #FFFFFF;
+	padding-left:50px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.row {	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col1 {
+	width: 200px;
+	float: left;
+	text-align:right;
+	padding-right: 8px;
+	padding-top:2px;
+}
+
+.col2 {
+	float: left;
+}

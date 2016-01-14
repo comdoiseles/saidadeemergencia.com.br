@@ -1,0 +1,22 @@
+.row
+{
+	width: 740px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.col1
+{	
+	width: 120px;	
+}
+
+.col2
+{
+	width: 400px;
+}
+
+.col1, .col2
+{
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

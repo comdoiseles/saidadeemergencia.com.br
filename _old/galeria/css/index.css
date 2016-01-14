@@ -1,0 +1,64 @@
+body
+{
+	font:14px Verdana;
+	color:#3d85b5;
+	background:
+	margin-top:0px;
+}
+
+.containerGimgs
+{
+	width:850px;
+	height:700px;
+	margin:0 auto;
+}
+
+.logo a
+{
+	width:210px;
+	height:100px;
+	display:block;
+	float: left;
+	position: absolute;
+}
+
+.logo a:hover
+{
+	background-color:#CCC;
+	filter:alpha(opacity=30);
+	-moz-opacity:0.30;
+	opacity:0.30;
+}
+
+.footer
+{
+	font-size:9px;
+	text-align:right;
+	color:#90F;
+	padding:0px 8px 0px 0px;
+}
+
+#zIndex1
+{
+	position:absolute;
+	width:172px;
+	height:67px;
+	float:left;
+	margin:10px 0px 0px 10px;
+	z-index:1;
+	left: 127px;
+	top: 17px;
+	margin-right: auto;
+	margin-bottom: o;
+	margin-left: auto;
+	left: 120px;
+	top: 20px;
+	background-color: #CCCCCC;
+}
+#tudo table tr td {
+
+}
+#tudo table tr td table tr th p {
+	font-weight: bold;
+	color: #FFF;
+}
