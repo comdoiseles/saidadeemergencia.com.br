@@ -65,7 +65,7 @@
     var btnEnviar = $(form).find('.btn-enviar');
 
     btnEnviar.button('loading');
-    $.post('https://formkeep.com/f/719de3dc7fcb', {
+    $.post('http://formspree.io/contato@saidadeemergencia.com.br', {
       nome: $(form).find('input[name="nome"]').val(),
       email: $(form).find('input[name="email"]').val(),
       mensagem: $(form).find('textarea[name="mensagem"]').val()
