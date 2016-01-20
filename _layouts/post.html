@@ -3,16 +3,25 @@ layout: default
 ---
 <div id="page">
   <div class="container">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <header>
-        <h1 class="post-title text-white" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | localize: "%d de %B de %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-      </header>
-      <div class="post-content text-white" itemprop="articleBody">
-        {{ content }}
+    <div class="row">
+      <div class="col-xs-12">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <header>
+            <h1 class="post-title text-white" itemprop="name headline">{{ page.title }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | localize: "%d de %B de %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+          </header>
+          <div class="post-content text-white" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </article>
+        {% include social-buttons.html %}
       </div>
-    </article>
-    {% include social-buttons.html %}
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-xs-12">
+        <a href="/" style="font-size:24px;">Voltar para Site</a>
+      </div>
+    </div>
   </div>
 </div>
