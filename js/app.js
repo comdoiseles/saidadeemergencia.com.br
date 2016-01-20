@@ -18,9 +18,9 @@
       e.preventDefault()
       $(this).tab('show')
     })
-      
+
     // Navbar
-    $(".navbar-nav li a").click(collapseNavbar);    
+    $(".navbar-nav li a").click(collapseNavbar);
 
 
     // Sidebar
@@ -34,7 +34,7 @@
 
   });
 
-  function openSidebar(){
+  function openSidebar() {
     $("#wrapper").toggleClass("toggled");
   }
 
@@ -65,25 +65,34 @@
     var btnEnviar = $(form).find('.btn-enviar');
 
     btnEnviar.button('loading');
-    $.post('http://formspree.io/contato@saidadeemergencia.com.br', {
-      nome: $(form).find('input[name="nome"]').val(),
-      email: $(form).find('input[name="email"]').val(),
-      mensagem: $(form).find('textarea[name="mensagem"]').val()
-    }, function() {
-      $('#alert')
-        .removeClass('alert-danger')
-        .addClass('alert-success')
-        .text('Obrigado! Recebemos a sua mensagem!')
-        .show();
-    }).fail(function() {
-      $('#alert')
-        .removeClass('alert-success')
-        .addClass('alert-danger')
-        .text('Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde!')
-        .show();
-    }).always(function() {
-      form.reset();
-      btnEnviar.button('reset');
-    })
+    $.ajax({
+      url: '//formspree.io/contato@saidadeemergencia.com.br',
+      method: 'POST',
+      dataType: 'json',
+      data: {
+        nome: $(form).find('input[name="nome"]').val(),
+        email: $(form).find('input[name="email"]').val(),
+        mensagem: $(form).find('textarea[name="mensagem"]').val()
+      },
+      success: function() {
+        $('#alert')
+          .removeClass('alert-danger')
+          .addClass('alert-success')
+          .text('Obrigado! Recebemos a sua mensagem!')
+          .show();
+      },
+      error: function() {
+        $('#alert')
+          .removeClass('alert-success')
+          .addClass('alert-danger')
+          .text('Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde!')
+          .show();
+      },
+      complete: function() {
+        form.reset();
+        btnEnviar.button('reset');
+      }
+    });
   }
+
 })();
