@@ -84,7 +84,7 @@ body {
   }
 }
 
-section {
+section, article {
   header {
     h1 {
       display: inline-block;
@@ -203,3 +203,17 @@ section#contato {
     }
   }
 }
+
+.page-integrante{
+      p, {
+        font-family: Tungsten-Light, sans-serif;
+        font-size: 24px;
+        padding: 10px;
+      }
+      li {
+        font-size: 24px;
+        font-family: Tungsten-Light, sans-serif;
+        color: white;
+      }
+}
+
