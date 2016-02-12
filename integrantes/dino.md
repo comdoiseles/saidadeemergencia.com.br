@@ -1,7 +1,7 @@
 ---
 layout: integrante
 title: Dino Chaves - Guitarrista e Vocalista
-permalink: /integrantes/dino
+permalink: /integrantes/dino.html
 image: original_dino.jpg
 sections:
   parte1: Dino Chaves é vocalista, guitarrista, compositor e emérito fundador da banda de rock Saída de Emergência. Um cara objetivo e sistemático. Admira  as obras de Raul Seixas, Cazuza, Rage Against The Machine e  Gentle Giant, além de ser fã dos arretados Luiz Gonzaga e Jackson do Pandeiro, principalmente pela autenticidade de ambos.
