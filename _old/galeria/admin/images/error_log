@@ -1,2 +1,0 @@
-[29-Oct-2008 09:55:05] PHP Fatal error:  Call to a member function getElementsByTagName() on a non-object in /home/pastasel/public_html/galeria/class/images/images.class.php on line 162
-[29-Oct-2008 09:55:14] PHP Fatal error:  Call to a member function getElementsByTagName() on a non-object in /home/pastasel/public_html/galeria/class/images/images.class.php on line 162

@@ -1,18 +1,357 @@
----
-layout: default 
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div id="page">
-  {% include section-banner.html %}
-  {% include section-musica.html %}
-  {% include section-banda.html %}
-  {% include section-fotos.html %}
-  {% include section-shows.html %}
-  {% include section-noticias.html %}
-  {% include section-contato.html %}  
+  <title>Saída de Emergência</title>
+  <meta name="description" content="Site Oficial da Banda Saída de Emergência
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://saidadeemergencia.com.br/">
+  <link rel="alternate" type="application/rss+xml" title="Saída de Emergência" href="http://saidadeemergencia.com.br/feed.xml">
+  <meta name="google-site-verification" content="4FonaOgj5LYNlqK_zf8nCSyNlHT_ig_9fIrW7O1-Ft0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="180">
+  <div id="wrapper" class="toggled">
+    <header>
+  <nav class="navbar navbar-default navbar-fixed-top black">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">
+          <img src="/images/logo.png" alt="">
+          
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#musica">MÚSICA</a></li>
+          <li><a href="#banda">BANDA</a></li>
+          <li><a href="#fotos">FOTOS</a></li>
+          <a class="navbar-brand hidden-xs" href="#">
+            <img src="/images/logo.png" alt="">
+          </a>
+          <li><a href="#shows">SHOWS</a></li>
+          <li><a href="#noticias">NOTÍCIAS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- PLAY BUTTON -->
+    <div id="play-wrapper">
+      <span class="glyphicon glyphicon-play"></span>
+    </div>
+    <!-- SIDEBAR -->
+    <div id="sidebar-wrapper">
+      <iframe src="https://embed.spotify.com/?uri=spotify:artist:68mfYIeMBOsPj4kOUdii1d" frameborder="0" allowtransparency="true" width="640" height="720"></iframe>
+    </div>
+    <main>
+      <div id="page">
+  <section id="banner" class="wow fadeIn">
+  <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/slide_1.jpg" alt="...">
+          <div class="carousel-caption">
+            <a href="#musica" class="btn btn-lg btn-danger">OUÇA AS MÚSICAS</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slide_2.jpg" alt="...">
+          <div class="carousel-caption">
+            <a href="#banda" class="btn btn-lg btn-danger">CONHEÇA A BANDA</a>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section id="musica" class="wow fadeIn">
+  <div class="container">
+    <header>
+      <h1 class="text-red">MÚSICAS</h1>
+    </header>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="album-capa">
+          <img src="images/cd_1.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="album-detalhes">
+          <h1 class="text-white">O Importante é o Principal</h1>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#release" aria-controls="release" role="tab" data-toggle="tab">Release</a></li>
+            <li><a href="#faixas" aria-controls="faixas" role="tab" data-toggle="tab">Faixas</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="release">
+              <p class="text-white">
+                A banda Saída de Emergência lança o CD “O Importante é o Principal”, 2º. deste grupo que está na estrada há quase 10 anos e é composto por Dino Chaves no vocal e guitarra, Danilo Godoy na guitarra, Lok`s na bateria e Lelo Carvalho no contrabaixo.. O álbum de 13 faixas teve a produção musical de Petch Calasans. As letras das músicas sempre levam mensagens política sociais, religiosas e cotidianas.
+              </p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="faixas">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <li class="text-white">01 – Encabrestados FC</li>
+                  <li class="text-white">02 – Garoto Juca</li>
+                  <li class="text-white">03 – Eu não sou marginal</li>
+                  <li class="text-white">04 – Bundas Cantantes</li>
+                  <li class="text-white">05 – Lixo comercial</li>
+                  <li class="text-white">06 – Lá em cima do morro</li>
+                  <li class="text-white">07 – Bem acompanhado</li>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <li class="text-white">08 – Made in Brazil</li>
+                  <li class="text-white">09 – Solução final</li>
+                  <li class="text-white">10 - Tome zero</li>
+                  <li class="text-white">11 – Rock 30</li>
+                  <li class="text-white">12 - Liberou geral</li>
+                  <li class="text-white">13 – Neste horário</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="album-acoes">
+          <a class="btn btn-lg btn-danger" href="https://open.spotify.com/album/2JrekO9dZ87FPqMiUJcN3X" target="blank">
+            <i class="glyphicon glyphicon-play"></i> OUÇA NO SPOTIFY
+          </a>
+          <a class="btn btn-lg btn-danger" href="">
+            <i class="glyphicon glyphicon-cloud-download"></i> FAÇA O DOWNLOAD DO ALBUM
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="banda" class="wow fadeIn">
+  <div class="container">
+    <header>
+      <h1 class="text-red">BANDA</h1>
+    </header>
+    <div class="row">
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="/integrantes/dino.html" class="thumbnail integrante" style="background-image: url('images/thumbnail_dino.jpg'); background-size:cover;">
+          <div class="caption">
+            <h3 class="text-white">DINO CHAVES</h3>
+            <p class="text-white">VOCALISTA E GUITARRISTA</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="/integrantes/danilo.html" class="thumbnail integrante" style="background-image: url('images/thumbnail_danilo.jpg'); background-size:cover;">
+          <div class="caption">
+            <h3 class="text-white">DANILO GODOY</h3>
+            <p class="text-white">GUITARRISTA</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="/integrantes/loks.html" class="thumbnail integrante" style="background-image: url('images/thumbnail_loks.jpg'); background-size:cover;">
+          <div class="caption">
+            <h3 class="text-white">LOK's RASMUSSEN</h3>
+            <p class="text-white">BATERISTA</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="/integrantes/lelo.html" class="thumbnail integrante" style="background-image: url('images/thumbnail_lelo.jpg'); background-size:cover;">
+          <div class="caption">
+            <h3 class="text-white">LELO CARVALHO</h3>
+            <p class="text-white">CONTRABAIXISTA</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="fotos">
+  <div class="container">
+    <header>
+      <h1 class="text-red">FOTOS</h1>
+    </header>
+   <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/0322992b52cc59379195f721f147a499.html" id="instansive_0322992b52" name="instansive_0322992b52"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+  </div>
+</section>
+
+  <section id="shows">
+  <div class="container">
+    <header>
+      <h1 class="text-red">SHOWS</h1>
+    </header>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-white">EM BREVE INFORMAÇŌES E DATAS DE SHOWS...</h2>  
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <section id="noticias">
+  <div class="container">
+    <header>
+      <h1 class="text-red">NOTÍCIAS</h1>
+    </header>
+    <div class="row">
+     <div class="col-xs-12">
+          <h2 class="text-white">EM BREVE NOVAS NOTÍCIAS E NOVIDADES...</h2>
+        </div>
+      <!-- <ul class="noticias"> 
+         
+        <li class="post">
+          <h3 class="text-white underline">30 de Dezembro de 2010</h3>
+          <h1>
+            <a class="text-white" href="/noticias/2010/12/30/welcome-to-jekyll.html">“Tribuna do Paraná” prestigia lançamento da banda “Saída de Emergência”</a>
+          </h1>
+        </li>
+         }} 
+      </ul> -->
+    </div>
+  </div>
+</section>
+
+  <section id="contato" class="red-transparent">
+  <div class="container">
+    <h1 class="text-black">CONTATO</h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="alert" class="alert alert-danger" role="alert"></div>
+      </div>
+      <form id="contato-form">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <input type="text" class="form-control" name="nome" placeholder="Digite seu Nome" required>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Digite seu Email" required>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-group">
+            <textarea class="form-control" name="mensagem" cols="30" rows="4" placeholder="Digite a sua mensagem"></textarea>
+          </div>
+        </div>
+        <div class="col-sm-12 center">
+          <button id 1type="submit" data-loading-text="Enviando..." class="btn btn-enviar">
+            <span class="spinner"><i class="icon-refresh"></i> ENVIAR
+           </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  
 </div>
 
 
 
 
 
+
+    </main>
+    <footer class="blue-transparent">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4">
+      <h3 class="text-white">EMAIL</h3>
+      <h4 class="text-white">contato@saidadeemergencia.com.br</h4>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h3 class="text-white">TELEFONE</h3>
+      <h4 class="text-white">(11) 97596-5477</h4>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <h3 class="text-white">REDES SOCIAIS</h3>
+      <h4 class="text-white">
+        <a href="https://www.instagram.com/bandasaidadeemergencia/" target="_blank">
+          <i class="fa fa-instagram" style="color:white;"></i>      
+        </a>
+      </h4>
+    </div>
+  </div>
+  <!-- 
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Saída de Emergência</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Saída de Emergência</li>
+          <li><a href="mailto:contato@saidadeemergencia.com.br">contato@saidadeemergencia.com.br</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">jekyll</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">jekyllrb</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Site Oficial da Banda Saída de Emergência
+</p>
+      </div>
+    </div>
+
+  </div> -->
+</footer>
+
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
